@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import VoteCounter from './VoteCounter'; // Import your components
+import WeatherDisplay from './WeatherDisplay';
+import ShoppingCart from './ShoppingCart';
+import ItemAdder from './ItemAdder';
+import ListManager from './ListManager';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>React Hooks Examples</h1>
+      <section>
+        <h2>Vote Counter (useState)</h2>
+        <VoteCounter />
+      </section>
+
+      <section>
+        <h2>Weather Display (useEffect)</h2>
+        <WeatherDisplay />
+      </section>
+
+      <section>
+        <h2>Shopping Cart (useReducer)</h2>
+        <ShoppingCart />
+      </section>
+
+      <section>
+        <h2>Price Calculator (useMemo)</h2>
+        <ItemAdder />
+      </section>
+
+      <section>
+        <h2>Filtered List (useCallback)</h2>
+        <ListManager />
+      </section>
+
     </div>
   );
 }
