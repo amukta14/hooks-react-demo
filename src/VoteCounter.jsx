@@ -11,6 +11,7 @@ function VoteCounter() {
     <div>
       <p>Current Votes: {votes}</p>
       <button onClick={handleVote}>Vote</button>
+      <button onClick={() => setVotes(votes - 1)}>Downvote</button>
     </div>
   );
 }
